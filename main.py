@@ -11,7 +11,6 @@ app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-
 @app.get("/healthy")
 def health_check():
     return {'status': 'Healthy'}
